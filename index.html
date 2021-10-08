@@ -1,3 +1,7 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -58,10 +62,10 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav m-auto">
-                        <a href="home1.html" class="nav-item nav-link active ">Home</a>
-                        <a href="about2.html" class="nav-item nav-link ">About</a>
-                        <a href="act3.html" class="nav-item nav-link">Activity</a>
-                        <a href="cont.html" class="nav-item nav-link">Contact</a>
+                        <a href="<?php echo site_url('Mypage/index');?>" class="nav-item nav-link active ">Home</a>
+                        <a href="<?php echo site_url('Mypage/link1');?>" class="nav-item nav-link ">About</a>
+                        <a href="<?php echo site_url('Mypage/link2');?>" class="nav-item nav-link">Activity</a>
+                        <a href="<?php echo site_url('Mypage/link4');?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +78,7 @@
                 <div class="owl-carousel">
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="img/som-1.JPEG" alt="Image">
+                            <img src="<?php echo base_url('img');?>/som-1.JPEG" alt="Image">
                         </div>
                         <div class="carousel-text">
                             <h1>Piyawan Tathip</h1>
@@ -94,25 +98,25 @@
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
-                            <img src="img/icon-4.png" alt="Icon">
+                            <img src="<?php echo base_url('img');?>/icon-4.png" alt="Icon">
                             <h2>Teamwork</h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
-                            <img src="img/icon-1.png" alt="Icon">
+                            <img src="<?php echo base_url('img');?>/icon-1.png" alt="Icon">
                             <h2>Fast Learning</h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
-                            <img src="img/icon-8.png" alt="Icon">
+                            <img src="<?php echo base_url('img');?>/icon-8.png" alt="Icon">
                             <h2>relationship</h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
-                            <img src="img/icon-6.png" alt="Icon">
+                            <img src="<?php echo base_url('img');?>/icon-6.png" alt="Icon">
                             <h2>Positive attitude</h2>
                         </div>
                     </div>
@@ -129,7 +133,7 @@
                     <div class="col-md-6">
                         <div class="about-img">
                             <div class="about-img-1">
-                            <img src="img/som-3.JPEG" alt="Image">
+                            <img src="<?php echo base_url('img');?>/som-3.JPEG" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -137,7 +141,7 @@
                         <div class="section-header">
                             <h4>- Information Technology -</h4>
                             <h3>Rajamangala University of Technology Lanna Tak</h3>
-                            <a href="about2.html" target="_www">Read More</a>
+                            <a href="<?php echo site_url('Mypage/link1');?>" target="_blank">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -151,12 +155,12 @@
             <div class="container">
                 <div class="section-header">
                     <h2>ผลงาน</h2><br>
-                    <a href="act3.html" target="_www">Read More</a>
+                    <a href="<?php echo site_url('Mypage/link2');?>" target="_blank">Read More</a>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
-                            <img src="img/icon-2.png" alt="Icon">
+                            <img src="<?php echo base_url('img');?>/icon-2.png" alt="Icon">
                             <p>
                                 การใช้ AI
                             </p>
@@ -164,7 +168,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
-                        <img src="img/icon-1.png" alt="Icon">
+                        <img src="<?php echo base_url('img');?>/icon-1.png" alt="Icon">
                             <p>
                                 การใช้ Pr
                             </p>
@@ -172,7 +176,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
-                            <img src="img/icon-3.png" alt="Icon">
+                            <img src="<?php echo base_url('img');?>/icon-3.png" alt="Icon">
                             <p>
                                 Infographics
                             </p>
@@ -180,7 +184,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
-                            <img src="img/icon-4.png" alt="Icon">
+                            <img src="<?php echo base_url('img');?>/icon-4.png" alt="Icon">
                             <p>
                                 กิจกรรมต่างๆ
                             </p>
